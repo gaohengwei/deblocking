@@ -1,25 +1,66 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_refresh_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="eJA-tc-bxG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vP2-OD-yqq" customClass="GGVeiw">
+                                <rect key="frame" x="37" y="266" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="el7-e3-36Y"/>
+                                    <constraint firstAttribute="width" constant="300" id="pS5-8I-sPu"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUK-gQ-ZDA">
+                                <rect key="frame" x="141" y="77" width="93" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="cNP-fR-ia9"/>
+                                    <constraint firstAttribute="height" constant="89" id="nc6-ea-GgQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eJA-tc-bxG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3Vw-1H-sJ8"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vP2-OD-yqq" secondAttribute="bottom" constant="101" id="CeP-TJ-4DC"/>
+                            <constraint firstItem="eJA-tc-bxG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Hge-9R-cHH"/>
+                            <constraint firstItem="yUK-gQ-ZDA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="121" id="Kkh-vu-nIj"/>
+                            <constraint firstAttribute="trailing" secondItem="eJA-tc-bxG" secondAttribute="trailing" id="OoP-o3-weI"/>
+                            <constraint firstItem="vP2-OD-yqq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="azT-vF-JiP"/>
+                            <constraint firstItem="yUK-gQ-ZDA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="57" id="kFh-ze-keT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eJA-tc-bxG" secondAttribute="bottom" id="uNT-Va-xU8"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="imageView" destination="yUK-gQ-ZDA" id="oRH-Wl-8dk"/>
+                        <outlet property="myView" destination="vP2-OD-yqq" id="xLY-V5-ZMh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="211.5" y="230.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Home_refresh_bg.png" width="640" height="1008"/>
+    </resources>
 </document>

@@ -1,9 +1,9 @@
 //
 //  ViewController.h
-//  deblocking
+//  九宫格解锁
 //
-//  Created by 高恒伟521 on 16/2/15.
-//  Copyright © 2016年 gds. All rights reserved.
+//  Created by 高恒伟521 on 15/11/18.
+//  Copyright © 2015年 gds. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
